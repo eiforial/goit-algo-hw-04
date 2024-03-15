@@ -6,7 +6,7 @@ def total_salary(path):
         total = 0
         count = 0
 
-        with open(path, 'r') as file:
+        with open(path, encoding = "utf-8") as file:
             for line in file:
                 _, salary = line.strip().split(',')
                 total += int(salary)
