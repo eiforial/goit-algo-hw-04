@@ -17,7 +17,7 @@ def total_salary(path):
     
     except FileNotFoundError:
         print("Файл не найден.")
-        
+   
 total, average = total_salary(file_path)
 
 print(f"Общая сумма зарплаты: {total} Средняя зарплата: {average}")
