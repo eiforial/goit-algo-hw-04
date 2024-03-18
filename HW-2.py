@@ -20,4 +20,4 @@ def read_cats_info(path):
 
 cats = read_cats_info(path)
 for cat in cats:
-    print(cat)
+    print(cat) 
