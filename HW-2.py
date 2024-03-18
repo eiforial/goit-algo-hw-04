@@ -1,6 +1,6 @@
 path = 'cats_file.txt'  
 
-def read_cats_info(file_path):
+def read_cats_info(path):
     cats_list = []
     try:
         with open(path, 'r') as file:
@@ -13,7 +13,7 @@ def read_cats_info(file_path):
                 }
                 cats_list.append(cat_dict)
     except FileNotFoundError:
-        print(f"Файл '{file_path}' не найден.")
+        print(f"Файл '{path}' не найден.")
     except Exception as e:
         print(f"Произошла ошибка: {e}")
     return cats_list
